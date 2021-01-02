@@ -42,8 +42,7 @@ class Duellocu_Algoritmasi():
 		self.cozum_degeri=np.empty((x.__len__()+1,pop),dtype=np.float64)
 		self.en_iyi_cozum=np.empty((0,x.__len__()+1),dtype=np.float64)
 		
-	def baslangic(self,plot=False):
-		self.plot=plot
+	def baslangic(self):
 		#Düellocu algoritma adımları
 		self.kayit()
 		self.yeterlilik()
