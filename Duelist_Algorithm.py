@@ -3,7 +3,7 @@ import random
 import time
 import matplotlib.pyplot as mp
 
-class Duellocu_Algoritmasi():
+class Duelist_Algorithm():
 	def __init__(self,f,x,altdeger,ustdeger,pop=200,sans=0.01,mutasyon=0.1,ogren=0.8,iterasyon=500,nc=5,karistir=False):
 		#Sınıf değişkenlerinin tanımlamaları
 		self.f = f
@@ -167,15 +167,14 @@ class Duellocu_Algoritmasi():
 	def sonuc_goster(self):
 		sonuc=self.en_iyi_cozum[self.en_iyi_cozum[:,0].argsort()]
 		print("En iyi cozum degerleri:",sonuc[0][1::], "En iyi cozum", sonuc[0][0])
-		if self.plot==True:
-			fig = fig = mp.figure()
-			ax1 = fig.add_subplot(211)
-			ax1.plot(self.fmin,'r.-')
-			ax1.legend(['MinUygunluk'])
-			ax2 = fig.add_subplot(212)
-			ax2.plot(self.x_dizi,'b.-')
-			ax2.plot(self.y_dizi,'g--')
-			mp.legend(['x1','x2'])
-			mp.show()
+		fig = fig = mp.figure()
+		ax1 = fig.add_subplot(211)
+		ax1.plot(self.fmin,'r.-')
+		ax1.legend(['MinUygunluk'])
+		ax2 = fig.add_subplot(212)
+		ax2.plot(self.x_dizi,'b.-')
+		ax2.plot(self.y_dizi,'g--')
+		mp.legend(['x1','x2'])
+		mp.show()
 		
 	
