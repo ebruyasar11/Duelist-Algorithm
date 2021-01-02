@@ -20,4 +20,4 @@ xmin=[-10,-10]
 xmax=[10,10]
 
 DA = Duelist_Algorithm(f,x,xmin,xmax,iterasyon=100)
-DA.baslangic(plot=True)
+DA.baslangic()
