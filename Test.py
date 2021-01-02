@@ -1,4 +1,4 @@
-from Duellocu_Algoritmasi import Duellocu_Algoritmasi
+from Duelist_Algorithm import Duelist_Algorithm
 import math
 
 def f(x1,x2):
@@ -19,5 +19,5 @@ x=["x1","x2"]
 xmin=[-10,-10]
 xmax=[10,10]
 
-DA = Duellocu_Algoritmasi(f,x,xmin,xmax,iterasyon=100)
+DA = Duelist_Algorithm(f,x,xmin,xmax,iterasyon=100)
 DA.baslangic(plot=True)
